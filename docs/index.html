@@ -3,291 +3,378 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portafolio — Dev Full Stack</title>
+    <title>Portfolio — Full Stack Dev</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Inter:wght@300;400;500&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <!-- NAV -->
-    <nav>
-      <a class="nav-logo" href="#hero">Dev<span>.</span></a>
-      <ul class="nav-links">
-        <li><a href="#about">Sobre mí</a></li>
-        <li><a href="#skills">Habilidades</a></li>
-        <li><a href="#projects">Proyectos</a></li>
-        <li><a href="#contact">Contacto</a></li>
-      </ul>
-    </nav>
+    <div class="orbs">
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+      <div class="orb orb-3"></div>
+    </div>
 
-    <!-- HERO -->
-    <section id="hero">
-      <div class="hero-grid"></div>
-      <div class="hero-inner">
-        <div>
-          <div class="hero-eyebrow">Desarrollador Web Full Stack</div>
-          <h1 class="hero-title">
-            Construyo
-            <span class="accent">productos digitales</span>
-            que funcionan.
-          </h1>
-          <p class="hero-sub">
-            Del diseño de arquitectura al detalle de UI — llevo ideas desde cero
-            hasta producción con código limpio, escalable y centrado en el
-            usuario.
-          </p>
-          <div class="hero-cta">
-            <a href="#projects" class="btn btn-primary">Ver proyectos</a>
-            <a href="#contact" class="btn btn-outline">Hablemos</a>
-          </div>
-        </div>
-        <div class="hero-visual">
-          <div class="code-card">
-            <div class="code-bar">
-              <span class="r"></span><span class="y"></span
-              ><span class="g"></span>
+    <div class="page">
+      <nav>
+        <a class="nav-logo" href="#hero">Dev<span>.</span></a>
+        <ul class="nav-links">
+          <li><a href="#about">Sobre mí</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Proyectos</a></li>
+          <li><a href="#contact">Contacto</a></li>
+        </ul>
+        <a href="#contact" class="nav-cta">Hablemos</a>
+      </nav>
+
+      <section id="hero">
+        <div class="hero-inner">
+          <div>
+            <div class="hero-badge">
+              <span class="dot"></span>
+              Disponible para proyectos
             </div>
-            <div class="cm">// stack.config.ts</div>
-            <br />
-            <span class="kw">const</span> developer = {<br />
-            &nbsp;&nbsp;frontend: [<span class="str">'HTML/CSS/JS'</span
-            >],<br />
-            &nbsp;&nbsp;backend: [<span class="str">'Django'</span>,
-            <span class="str">'REST API'</span>],<br />
-            &nbsp;&nbsp;db: [<span class="str">'SQLite'</span>],<br />
-            &nbsp;&nbsp;devops: [<span class="str">'Render'</span>,
-            <span class="str">'GitHub Pages'</span>],<br />
-            &nbsp;&nbsp;<span class="fn">disponible</span>:
-            <span class="str">true</span><br />
-            }
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- SOBRE MÍ -->
-    <section id="about">
-      <div class="section-inner">
-        <div class="section-label">Sobre mí</div>
-        <h2 class="section-title fade-up">
-          Pasión por el código,<br />obsesión por el detalle.
-        </h2>
-        <div class="about-grid">
-          <div class="about-avatar fade-up">
-            <span class="avatar-placeholder">{ }</span>
-            <div class="avatar-badge">💼 Disponible para proyectos</div>
-          </div>
-          <div class="about-text fade-up">
-            <p>
-              Soy desarrollador web full stack con experiencia construyendo
-              aplicaciones robustas de extremo a extremo. Me muevo con comodidad
-              tanto en el frontend como en el backend, y disfruto especialmente
-              los momentos donde la arquitectura y la experiencia de usuario se
-              encuentran.
+            <h1 class="hero-title">
+              Construyo<br />
+              <span class="grad">productos digitales</span><br />
+              que funcionan.
+            </h1>
+            <p class="hero-desc">
+              Del diseño de arquitectura al detalle de UI — llevo ideas desde
+              cero hasta producción con código limpio, escalable y centrado en
+              el usuario.
             </p>
-            <p>
-              Trabajo con equipos remotos y clientes directos. Me interesa
-              resolver problemas reales con soluciones simples, código
-              mantenible y foco en el rendimiento.
-            </p>
-            <div class="about-stats">
-              <div class="stat">
-                <div class="stat-num">3+</div>
-                <div class="stat-lbl">Años de experiencia</div>
+            <div class="hero-btns">
+              <a href="#projects" class="btn-grad">Ver proyectos</a>
+              <a href="#contact" class="btn-glass">Hablemos</a>
+            </div>
+          </div>
+          <div class="hero-card glass">
+            <div class="hc-top">
+              <div class="hc-avatar">D</div>
+              <div>
+                <div class="hc-name">Dev Full Stack</div>
+                <div class="hc-role">Frontend · Backend · DevOps</div>
               </div>
-              <div class="stat">
-                <div class="stat-num">20+</div>
-                <div class="stat-lbl">Proyectos entregados</div>
+              <div class="hc-status"><span class="dot"></span> Online</div>
+            </div>
+            <div class="hc-stat-row">
+              <div class="hc-stat">
+                <div class="hc-stat-n">3+</div>
+                <div class="hc-stat-l">años exp.</div>
               </div>
-              <div class="stat">
-                <div class="stat-num">100%</div>
-                <div class="stat-lbl">Commits con propósito</div>
+              <div class="hc-stat">
+                <div class="hc-stat-n">20+</div>
+                <div class="hc-stat-l">proyectos</div>
               </div>
+              <div class="hc-stat">
+                <div class="hc-stat-n">100%</div>
+                <div class="hc-stat-l">dedicación</div>
+              </div>
+            </div>
+            <div class="hc-skills">
+              <span class="hc-tag">React</span>
+              <span class="hc-tag">Next.js</span>
+              <span class="hc-tag">Node.js</span>
+              <span class="hc-tag">TypeScript</span>
+              <span class="hc-tag">PostgreSQL</span>
+              <span class="hc-tag">Docker</span>
+              <span class="hc-tag">AWS</span>
+              <span class="hc-tag">GraphQL</span>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- HABILIDADES -->
-    <section id="skills">
-      <div class="section-inner">
-        <div class="section-label" style="color: var(--gold)">Habilidades</div>
-        <h2 class="section-title light fade-up">
-          Stack completo,<br />de punta a punta.
-        </h2>
-        <div class="skills-grid">
-          <div class="skill-card fade-up">
-            <span class="skill-icon">⚡</span>
-            <div class="skill-name">Frontend</div>
-            <div class="skill-tags">
-              <span class="tag">JavaScript (ES6)</span>
-              <span class="tag">HTML5 / CSS3</span>
-              <span class="tag">Fetch API</span>
-              <span class="tag">UI/UX Design</span>
-            </div>
+      <section id="about">
+        <div class="inner">
+          <div class="pill-label reveal">
+            <span class="dot"></span> Sobre mí
           </div>
-          <div class="skill-card fade-up">
-            <span class="skill-icon">🔧</span>
-            <div class="skill-name">Backend</div>
-            <div class="skill-tags">
-              <span class="tag">Python</span>
-              <span class="tag">Django</span>
-              <span class="tag">Django REST Framework</span>
-              <span class="tag">REST APIs</span>
-            </div>
-          </div>
-          <div class="skill-card fade-up">
-            <span class="skill-icon">🗄️</span>
-            <div class="skill-name">Bases de datos</div>
-            <div class="skill-tags">
-              <span class="tag">SQLite</span>
-              <span class="tag">ORM Django</span>
-            </div>
-          </div>
-          <div class="skill-card fade-up">
-            <span class="skill-icon">☁️</span>
-            <div class="skill-name">DevOps & Cloud</div>
-            <div class="skill-tags">
-              <span class="tag">Git</span>
-              <span class="tag">GitHub Pages</span>
-              <span class="tag">Render.com</span>
-              <span class="tag">WhiteNoise</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- PROYECTOS -->
-    <section id="projects">
-      <div class="section-inner">
-        <div class="section-label">Proyectos</div>
-        <h2 class="section-title fade-up">
-          Trabajo que habla<br />por sí solo.
-        </h2>
-
-        <!-- Aquí es donde JavaScript inyectará tus proyectos de Django -->
-        <div class="projects-grid" id="contenedor-proyectos">
-          <p style="color: var(--muted); grid-column: 1/-1; text-align: center">
-            Conectando al servidor y cargando proyectos...
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <!-- CONTACTO -->
-    <section id="contact">
-      <div class="section-inner">
-        <div class="contact-inner">
-          <div class="section-label">Contacto</div>
-          <h2 class="section-title light fade-up">
-            ¿Tenés un proyecto<br />en mente?
+          <h2 class="sec-title reveal">
+            Pasión por el código,<br />obsesión por el detalle.
           </h2>
-          <p class="contact-sub">
-            Estoy disponible para proyectos freelance, colaboraciones y
-            posiciones full-time. Contame qué tenés en mente.
-          </p>
-          <form class="contact-form fade-up" onsubmit="handleSubmit(event)">
-            <div class="form-row">
-              <div class="form-group">
-                <label for="name">Nombre</label>
-                <input type="text" id="name" placeholder="Tu nombre" required />
-              </div>
-              <div class="form-group">
-                <label for="email">Email</label>
-                <input
-                  type="email"
-                  id="email"
-                  placeholder="tu@email.com"
-                  required
-                />
-              </div>
+          <div class="about-grid">
+            <div class="about-main glass reveal">
+              <p>
+                Soy <strong>desarrollador web full stack</strong> con
+                experiencia construyendo aplicaciones robustas de extremo a
+                extremo. Me muevo con comodidad tanto en el frontend como en el
+                backend, y disfruto especialmente los momentos donde la
+                arquitectura y la <strong>experiencia de usuario</strong> se
+                encuentran.
+              </p>
+              <p>
+                Trabajo con equipos remotos y clientes directos. Me interesa
+                resolver problemas reales con soluciones simples,
+                <strong>código mantenible</strong> y foco en el rendimiento.
+              </p>
+              <p>
+                Cuando no estoy escribiendo código, probablemente estoy
+                aprendiendo algo nuevo, contribuyendo a proyectos open source o
+                tomando demasiado café.
+              </p>
             </div>
-            <div class="form-group">
-              <label for="subject">Asunto</label>
-              <input type="text" id="subject" placeholder="¿De qué se trata?" />
+            <div class="about-fact glass reveal">
+              <div class="af-num">3+</div>
+              <div class="af-label">Años de experiencia en desarrollo web</div>
             </div>
-            <div class="form-group">
-              <label for="msg">Mensaje</label>
-              <textarea
-                id="msg"
-                rows="5"
-                placeholder="Contame sobre tu proyecto..."
-                required
-              ></textarea>
+            <div class="about-fact glass reveal">
+              <div class="af-num">20+</div>
+              <div class="af-label">Proyectos entregados con éxito</div>
             </div>
-            <button
-              type="submit"
-              class="btn btn-primary"
-              style="justify-self: start"
-            >
-              Enviar mensaje
-            </button>
-          </form>
-          <div class="contact-links">
-            <a class="contact-link" href="#">
-              <svg
-                width="16"
-                height="16"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="1.5"
-              >
-                <path
-                  d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
-                />
-                <rect x="2" y="9" width="4" height="12" />
-                <circle cx="4" cy="4" r="2" />
-              </svg>
-              LinkedIn
-            </a>
-            <a class="contact-link" href="#">
-              <svg
-                width="16"
-                height="16"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="1.5"
-              >
-                <path
-                  d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
-                />
-              </svg>
-              GitHub
-            </a>
-            <a class="contact-link" href="#">
-              <svg
-                width="16"
-                height="16"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="1.5"
-              >
-                <path
-                  d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
-                />
-                <polyline points="22,6 12,13 2,6" />
-              </svg>
-              Email directo
-            </a>
+            <div class="about-quote glass reveal">
+              "El mejor código es el que no necesita explicación — claro, simple
+              y que resuelve el problema."
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- FOOTER -->
-    <footer>
-      <a class="nav-logo" href="#hero">Dev<span>.</span></a>
-      <p>© 2026 · Construido con código limpio y café.</p>
-    </footer>
+      <section id="skills">
+        <div class="inner">
+          <div class="pill-label reveal">
+            <span class="dot"></span> Habilidades
+          </div>
+          <h2 class="sec-title reveal">
+            Stack completo,<br />de punta a punta.
+          </h2>
+          <div class="skills-bento">
+            <div class="sk-card glass reveal">
+              <div class="sk-icon">⚡</div>
+              <div class="sk-name">Frontend</div>
+              <div class="sk-tags">
+                <span class="sk-tag">React</span
+                ><span class="sk-tag">Next.js</span>
+                <span class="sk-tag">TypeScript</span
+                ><span class="sk-tag">Tailwind</span>
+                <span class="sk-tag">HTML/CSS</span>
+              </div>
+            </div>
 
+            <div class="sk-card glass reveal">
+              <div class="sk-icon">🔧</div>
+              <div class="sk-name">Backend</div>
+              <div class="sk-tags">
+                <span class="sk-tag">Node.js</span
+                ><span class="sk-tag">Express</span>
+                <span class="sk-tag">GraphQL</span
+                ><span class="sk-tag">REST</span>
+                <span class="sk-tag">Python</span>
+              </div>
+            </div>
+
+            <div class="sk-card glass reveal">
+              <div class="sk-icon">🗄️</div>
+              <div class="sk-name">Bases de datos</div>
+              <div class="sk-tags">
+                <span class="sk-tag">PostgreSQL</span
+                ><span class="sk-tag">MongoDB</span>
+                <span class="sk-tag">Redis</span
+                ><span class="sk-tag">Prisma</span>
+              </div>
+            </div>
+
+            <div class="sk-card glass reveal">
+              <div class="sk-icon">☁️</div>
+              <div class="sk-name">DevOps</div>
+              <div class="sk-tags">
+                <span class="sk-tag">Docker</span
+                ><span class="sk-tag">AWS</span>
+                <span class="sk-tag">CI/CD</span
+                ><span class="sk-tag">Vercel</span>
+                <span class="sk-tag">Linux</span>
+              </div>
+            </div>
+
+            <div class="sk-card glass wide reveal">
+              <div class="sk-name">Nivel de dominio</div>
+              <div class="sk-bar-wrap">
+                <div class="sk-bar-row">
+                  <span class="sk-bar-label">React / Next</span>
+                  <div class="sk-bar-track">
+                    <div class="sk-bar-fill" style="width: 92%"></div>
+                  </div>
+                </div>
+                <div class="sk-bar-row">
+                  <span class="sk-bar-label">Node / Express</span>
+                  <div class="sk-bar-track">
+                    <div class="sk-bar-fill" style="width: 88%"></div>
+                  </div>
+                </div>
+                <div class="sk-bar-row">
+                  <span class="sk-bar-label">TypeScript</span>
+                  <div class="sk-bar-track">
+                    <div class="sk-bar-fill" style="width: 85%"></div>
+                  </div>
+                </div>
+                <div class="sk-bar-row">
+                  <span class="sk-bar-label">PostgreSQL</span>
+                  <div class="sk-bar-track">
+                    <div class="sk-bar-fill" style="width: 80%"></div>
+                  </div>
+                </div>
+                <div class="sk-bar-row">
+                  <span class="sk-bar-label">Docker / AWS</span>
+                  <div class="sk-bar-track">
+                    <div class="sk-bar-fill" style="width: 70%"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="sk-card glass wide reveal">
+              <div class="sk-name">También trabajo con</div>
+              <div class="sk-tags" style="margin-top: 0.8rem">
+                <span class="sk-tag">Git / GitHub</span
+                ><span class="sk-tag">Jest</span>
+                <span class="sk-tag">Webpack</span
+                ><span class="sk-tag">Figma</span>
+                <span class="sk-tag">Swagger</span
+                ><span class="sk-tag">Socket.io</span>
+                <span class="sk-tag">Stripe</span
+                ><span class="sk-tag">SendGrid</span>
+                <span class="sk-tag">Nginx</span
+                ><span class="sk-tag">Postman</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects">
+        <div class="inner">
+          <div class="pill-label reveal">
+            <span class="dot"></span> Proyectos
+          </div>
+          <h2 class="sec-title reveal">Trabajo que habla<br />por sí solo.</h2>
+
+          <div class="proj-grid" id="contenedor-proyectos"></div>
+        </div>
+      </section>
+
+      <section id="contact">
+        <div class="inner">
+          <div class="contact-grid">
+            <div class="contact-info glass reveal">
+              <div class="pill-label"><span class="dot"></span> Contacto</div>
+              <h2 class="sec-title">¿Tenés un proyecto en mente?</h2>
+              <p class="sec-sub">
+                Estoy disponible para proyectos freelance, colaboraciones y
+                posiciones full-time. Contame qué tenés en mente.
+              </p>
+              <div class="soc-links">
+                <a class="soc-link" href="#">
+                  <svg
+                    width="16"
+                    height="16"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"
+                    />
+                    <rect x="2" y="9" width="4" height="12" />
+                    <circle cx="4" cy="4" r="2" />
+                  </svg>
+                  LinkedIn
+                </a>
+                <a class="soc-link" href="#">
+                  <svg
+                    width="16"
+                    height="16"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                    />
+                  </svg>
+                  GitHub
+                </a>
+                <a class="soc-link" href="mailto:tu@email.com">
+                  <svg
+                    width="16"
+                    height="16"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                    />
+                    <polyline points="22,6 12,13 2,6" />
+                  </svg>
+                  tu@email.com
+                </a>
+              </div>
+            </div>
+            <div class="contact-form-wrap glass reveal">
+              <form class="cf" onsubmit="handleSubmit(event)">
+                <div class="cf-row">
+                  <div class="cf-group">
+                    <label for="name">Nombre</label>
+                    <input
+                      id="name"
+                      type="text"
+                      placeholder="Tu nombre"
+                      required
+                    />
+                  </div>
+                  <div class="cf-group">
+                    <label for="email">Email</label>
+                    <input
+                      id="email"
+                      type="email"
+                      placeholder="tu@email.com"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="cf-group">
+                  <label for="subject">Asunto</label>
+                  <input
+                    id="subject"
+                    type="text"
+                    placeholder="¿De qué se trata?"
+                  />
+                </div>
+                <div class="cf-group">
+                  <label for="msg">Mensaje</label>
+                  <textarea
+                    id="msg"
+                    rows="5"
+                    placeholder="Contame sobre tu proyecto..."
+                    required
+                  ></textarea>
+                </div>
+                <button
+                  type="submit"
+                  class="btn-grad"
+                  id="send-btn"
+                  style="width: fit-content"
+                >
+                  Enviar mensaje
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <a class="f-logo" href="#hero">Dev<span>.</span></a>
+        <p>© 2026 · Construido con código limpio y café.</p>
+      </footer>
+    </div>
     <script src="app.js"></script>
   </body>
 </html>
