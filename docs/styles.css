@@ -880,3 +880,36 @@ footer p {
     animation: none;
   }
 }
+.nav-logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  height: 32px; /* Controla la altura visual en la barra */
+  transition: transform 0.2s ease;
+}
+
+.nav-logo:hover {
+  transform: scale(1.02);
+}
+
+.logo-svg {
+  height: 100%;
+  width: auto;
+  overflow: visible;
+}
+
+/* Estilos para el texto dentro del SVG */
+.logo-text-core {
+  font-family: var(--sans);
+  font-weight: 700;
+  font-size: 15px;
+  fill: var(--bright);
+  letter-spacing: -0.3px;
+}
+
+.logo-text-dev {
+  font-family: var(--mono);
+  font-weight: 400;
+  font-size: 14px;
+  fill: var(--dim);
+}

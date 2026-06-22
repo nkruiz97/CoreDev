@@ -20,7 +20,55 @@
 
     <div class="page">
       <nav>
-        <a class="nav-logo" href="#hero">CoreDev<span>.</span></a>
+        <a href="#" class="nav-logo" aria-label="CoreDev Home">
+          <svg
+            class="logo-svg"
+            viewBox="0 0 120 40"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <!-- Isotipo: Corchetes semánticos formando C y D -->
+            <g class="logo-iso">
+              <!-- El corchete izquierdo (C) -->
+              <path
+                d="M22 10H14V30H22"
+                stroke="url(#logo-grad)"
+                stroke-width="3"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                fill="none"
+              />
+              <!-- El corchete derecho (D) modificado para cerrar la curva superior/inferior -->
+              <path
+                d="M26 10H31C35.5 10 38 13.5 38 20C38 26.5 35.5 30 31 30H26"
+                stroke="url(#logo-grad)"
+                stroke-width="3"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                fill="none"
+              />
+              <!-- El cursor/punto central -->
+              <circle cx="24" cy="20" r="1.5" fill="var(--accent)" />
+            </g>
+
+            <!-- Wordmark: Texto CoreDev -->
+            <text x="48" y="25" class="logo-text-core">Core</text>
+            <text x="82" y="25" class="logo-text-dev">Dev</text>
+
+            <!-- Gradiente dinámico que toma los colores de tu CSS -->
+            <defs>
+              <linearGradient
+                id="logo-grad"
+                x1="0%"
+                y1="0%"
+                x2="100%"
+                y2="100%"
+              >
+                <stop offset="0%" stop-color="var(--accent2)" />
+                <stop offset="100%" stop-color="var(--accent)" />
+              </linearGradient>
+            </defs>
+          </svg>
+        </a>
         <ul class="nav-links">
           <li><a href="#about">Sobre mí</a></li>
           <li><a href="#skills">Habilidades</a></li>
