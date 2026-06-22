@@ -7,26 +7,31 @@
 }
 
 :root {
-  /* Fondos y Superficies (Gris Monocromo Premium) */
-  --bg: #090a0f; /* Fondo oscuro puro, estilo interfaz de Apple/Linear */
-  --glass: rgba(20, 21, 28, 0.5); /* Cristal ahumado ultra-limpio */
-  --glass-hv: rgba(30, 32, 44, 0.6);
-  --border: rgba(255, 255, 255, 0.05);
-  --border-hv: rgba(249, 115, 22, 0.35); /* Brillo coral sutil al hacer hover */
+  /* Fondos y Superficies (Gris Espacial muy Oscuro y Puro) */
+  --bg: #080c14; /* Da un contraste drástico y limpio con el verde/cian */
+  --glass: rgba(15, 23, 42, 0.45); /* Base glasmórfica limpia y tecnológica */
+  --glass-hv: rgba(30, 41, 59, 0.55);
+  --border: rgba(255, 255, 255, 0.06);
+  --border-hv: rgba(
+    16,
+    185,
+    129,
+    0.3
+  ); /* Brillo sutil esmeralda al hacer hover */
 
-  /* Orbes de Luz (Psicología: Sofisticación Minimalista y Claridad) */
-  --orb1: #3f3f46; /* Gris Platino: Neutralidad, elegancia y madurez técnica */
-  --orb2: #18181b; /* Gris Grafito Profundo: Aporta volumen sin contaminar visualmente */
-  --orb3: #27272a; /* Gris Acero: Balance sutil para el fondo */
+  /* Orbes de Luz (Psicología: Alta Velocidad, Optimización y Éxito) */
+  --orb1: #059669; /* Verde Esmeralda: Estabilidad, salud del sistema y crecimiento */
+  --orb2: #0891b2; /* Cian Técnico: Precisión, velocidad de cómputo e infraestructura */
+  --orb3: #0f766e; /* Verde Azulado Oscuro: Da profundidad y balance de sombras */
 
   /* Tipografías y Colores de Texto */
-  --text: rgba(244, 244, 245, 0.6); /* Blanco tiza atenuado */
-  --bright: #f4f4f5; /* Blanco puro de alta fidelidad */
-  --dim: #71717a; /* Gris oscuro para textos secundarios */
+  --text: rgba(243, 244, 246, 0.65); /* Blanco tiza limpio */
+  --bright: #f3f4f6; /* Texto brillante de alta legibilidad */
+  --dim: #9ca3af; /* Gris atenuado para jerarquía secundaria */
 
-  /* Colores de Acento (Fuego/Acción: Diseñados para capturar clics) */
-  --accent: #f97316; /* Naranja Coral Vivo: Energía, accesibilidad e incentivo al clic */
-  --accent2: #ea580c; /* Óxido/Naranja Quemado: Para degradados pesados y premium */
+  /* Colores de Acento (Guían el ojo directo hacia la acción) */
+  --accent: #10b981; /* Verde esmeralda vivo para etiquetas y estados activos */
+  --accent2: #06b6d4; /* Cian brillante para gradientes y links destacados */
 
   /* Estructura y Fuentes */
   --sans: "Outfit", sans-serif;
@@ -61,10 +66,8 @@ body {
 .orb {
   position: absolute;
   border-radius: 50%;
-  filter: blur(
-    140px
-  ); /* Un blur más alto para un gradiente de fondo súper suave */
-  opacity: 0.4;
+  filter: blur(120px);
+  opacity: 0.3; /* Opacidad calibrada para el verde, que brilla más que el violeta */
   animation: drift 18s ease-in-out infinite;
 }
 
@@ -114,14 +117,14 @@ body::before {
   z-index: 1;
   background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.04'/%3E%3C/svg%3E");
   pointer-events: none;
-  opacity: 0.45; /* El ruido resalta de manera hermosa en la paleta monocromática */
+  opacity: 0.4;
 }
 
 /* ── GLASS STYLE ── */
 .glass {
   background: var(--glass);
-  backdrop-filter: blur(28px) saturate(140%);
-  -webkit-backdrop-filter: blur(28px) saturate(140%);
+  backdrop-filter: blur(24px) saturate(180%);
+  -webkit-backdrop-filter: blur(24px) saturate(180%);
   border: 1px solid var(--border);
   border-radius: var(--r);
 }
@@ -139,7 +142,7 @@ nav {
   align-items: center;
   justify-content: space-between;
   padding: 0.85rem 1.6rem;
-  background: rgba(9, 10, 15, 0.75);
+  background: rgba(8, 12, 20, 0.7);
   backdrop-filter: blur(20px);
   border: 1px solid var(--border);
   border-radius: 100px;
@@ -174,17 +177,17 @@ nav {
   font-size: 0.78rem;
   font-weight: 600;
   background: var(--accent);
-  color: #fff;
+  color: #080c14; /* Texto oscuro para máxima legibilidad sobre el verde brillante */
   padding: 0.4rem 1.1rem;
   border-radius: 100px;
   text-decoration: none;
   transition:
     background 0.2s,
-    transform 0.2s;
+    opacity 0.2s;
 }
 .nav-cta:hover {
   background: var(--accent2);
-  transform: scale(1.02);
+  opacity: 0.95;
 }
 
 /* ── LAYOUT ── */
@@ -209,8 +212,8 @@ section {
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--accent);
-  background: rgba(249, 115, 22, 0.08);
-  border: 1px solid rgba(249, 115, 22, 0.2);
+  background: rgba(16, 185, 129, 0.08);
+  border: 1px solid rgba(16, 185, 129, 0.2);
   border-radius: 100px;
   padding: 0.3rem 0.9rem;
   margin-bottom: 1.4rem;
@@ -272,9 +275,9 @@ section {
   gap: 0.5rem;
   font-size: 0.75rem;
   font-weight: 500;
-  color: var(--accent);
-  background: rgba(249, 115, 22, 0.06);
-  border: 1px solid rgba(249, 115, 22, 0.15);
+  color: var(--accent2);
+  background: rgba(6, 182, 212, 0.08);
+  border: 1px solid rgba(6, 182, 212, 0.2);
   border-radius: 100px;
   padding: 0.35rem 1rem;
   margin-bottom: 1.8rem;
@@ -283,8 +286,8 @@ section {
   width: 6px;
   height: 6px;
   border-radius: 50%;
-  background: var(--accent);
-  box-shadow: 0 0 8px var(--accent);
+  background: var(--accent2);
+  box-shadow: 0 0 8px var(--accent2);
   animation: blink 2s infinite;
 }
 h1.hero-title {
@@ -296,7 +299,7 @@ h1.hero-title {
   margin-bottom: 1.5rem;
 }
 h1.hero-title .grad {
-  background: linear-gradient(135deg, var(--bright) 30%, #a1a1aa 100%);
+  background: linear-gradient(135deg, var(--orb2) 0%, var(--orb1) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -317,8 +320,8 @@ h1.hero-title .grad {
 .btn-grad {
   padding: 0.85rem 2rem;
   border-radius: 100px;
-  background: linear-gradient(135deg, var(--accent), var(--accent2));
-  color: #fff;
+  background: linear-gradient(135deg, var(--orb2), var(--orb1));
+  color: #080c14; /* Texto oscuro para excelente contraste con verde/cian */
   font-size: 0.88rem;
   font-weight: 600;
   text-decoration: none;
@@ -363,8 +366,8 @@ h1.hero-title .grad {
   inset: 0;
   background: linear-gradient(
     135deg,
-    rgba(255, 255, 255, 0.03) 0%,
-    rgba(249, 115, 22, 0.04) 100%
+    rgba(6, 145, 178, 0.15) 0%,
+    rgba(5, 150, 105, 0.1) 100%
   );
   border-radius: var(--r);
 }
@@ -379,13 +382,13 @@ h1.hero-title .grad {
   width: 48px;
   height: 48px;
   border-radius: 50%;
-  background: linear-gradient(135deg, var(--accent), var(--accent2));
+  background: linear-gradient(135deg, var(--orb2), var(--orb1));
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 1.3rem;
   font-weight: 700;
-  color: #fff;
+  color: #080c14;
   font-family: var(--sans);
 }
 .hc-name {
@@ -420,7 +423,7 @@ h1.hero-title .grad {
   position: relative;
 }
 .hc-stat {
-  background: rgba(255, 255, 255, 0.02);
+  background: rgba(15, 23, 42, 0.35);
   border: 1px solid var(--border);
   border-radius: 12px;
   padding: 0.9rem;
@@ -446,9 +449,9 @@ h1.hero-title .grad {
 .hc-tag {
   font-size: 0.72rem;
   font-family: var(--mono);
-  background: rgba(255, 255, 255, 0.04);
-  border: 1px solid var(--border);
-  color: rgba(255, 255, 255, 0.6);
+  background: rgba(16, 185, 129, 0.08);
+  border: 1px solid rgba(16, 185, 129, 0.2);
+  color: rgba(255, 255, 255, 0.7);
   border-radius: 6px;
   padding: 0.25rem 0.65rem;
 }
@@ -469,7 +472,7 @@ h1.hero-title .grad {
 .about-main p {
   font-size: 0.97rem;
   font-weight: 300;
-  color: var(--text);
+  color: var(--dim);
   line-height: 1.9;
   margin-bottom: 1.1rem;
 }
@@ -489,7 +492,7 @@ h1.hero-title .grad {
   color: var(--bright);
   letter-spacing: -0.04em;
   line-height: 1;
-  background: linear-gradient(135deg, var(--bright) 0%, var(--dim) 100%);
+  background: linear-gradient(135deg, var(--orb2), var(--orb1));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -503,10 +506,10 @@ h1.hero-title .grad {
   padding: 1.6rem;
   font-size: 0.9rem;
   font-style: italic;
-  color: var(--text);
+  color: var(--dim);
   line-height: 1.75;
   border-left: 2px solid var(--accent);
-  background: rgba(249, 115, 22, 0.03);
+  background: rgba(6, 182, 212, 0.04);
   display: flex;
   align-items: center;
 }
@@ -528,7 +531,7 @@ h1.hero-title .grad {
 .sk-card:hover {
   border-color: var(--border-hv);
   background: var(--glass-hv);
-  box-shadow: 0 10px 25px rgba(249, 115, 22, 0.04);
+  box-shadow: 0 10px 25px rgba(16, 185, 129, 0.08);
 }
 .sk-card.wide {
   grid-column: span 2;
@@ -551,9 +554,9 @@ h1.hero-title .grad {
 .sk-tag {
   font-size: 0.68rem;
   font-family: var(--mono);
-  background: rgba(255, 255, 255, 0.03);
+  background: rgba(255, 255, 255, 0.04);
   border: 1px solid var(--border);
-  color: var(--text);
+  color: var(--dim);
   border-radius: 6px;
   padding: 0.2rem 0.55rem;
 }
@@ -570,24 +573,20 @@ h1.hero-title .grad {
 }
 .sk-bar-label {
   font-size: 0.75rem;
-  color: var(--text);
+  color: var(--dim);
   min-width: 80px;
 }
 .sk-bar-track {
   flex: 1;
   height: 4px;
-  background: rgba(255, 255, 255, 0.04);
+  background: rgba(255, 255, 255, 0.05);
   border-radius: 100px;
   overflow: hidden;
 }
 .sk-bar-fill {
   height: 100%;
   border-radius: 100px;
-  background: linear-gradient(
-    90deg,
-    #e4e4e7,
-    #71717a
-  ); /* Barras monocromáticas ultra elegantes */
+  background: linear-gradient(90deg, var(--orb2), var(--orb1));
   transition: width 1s ease;
 }
 
@@ -609,7 +608,7 @@ h1.hero-title .grad {
 .proj-card:hover {
   border-color: var(--border-hv);
   transform: translateY(-5px);
-  box-shadow: 0 12px 30px rgba(249, 115, 22, 0.1);
+  box-shadow: 0 12px 30px rgba(16, 185, 129, 0.12);
 }
 .proj-thumb {
   height: 160px;
@@ -624,18 +623,22 @@ h1.hero-title .grad {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(to bottom, transparent 40%, rgba(9, 10, 15, 0.9));
+  background: linear-gradient(
+    to bottom,
+    transparent 40%,
+    rgba(8, 12, 20, 0.85)
+  );
 }
 
-/* Grilla Monocromática Oscura con acento de textura */
+/* Grilla de Proyectos en la gama Verde Esmeralda, Verde Menta y Cian */
 .pt1 {
-  background: linear-gradient(135deg, #18181b, #27272a);
+  background: linear-gradient(135deg, #047857, #06b6d4);
 }
 .pt2 {
-  background: linear-gradient(135deg, #27272a, #090a0f);
+  background: linear-gradient(135deg, #0f766e, #10b981);
 }
 .pt3 {
-  background: linear-gradient(135deg, #3f3f46, #18181b);
+  background: linear-gradient(135deg, #0891b2, #059669);
 }
 
 .proj-body {
@@ -646,7 +649,7 @@ h1.hero-title .grad {
   font-weight: 600;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: var(--accent);
+  color: var(--accent2);
   margin-bottom: 0.4rem;
 }
 .proj-name {
@@ -657,7 +660,7 @@ h1.hero-title .grad {
 }
 .proj-desc {
   font-size: 0.84rem;
-  color: var(--text);
+  color: var(--dim);
   line-height: 1.7;
 }
 .proj-foot {
@@ -675,22 +678,22 @@ h1.hero-title .grad {
 .p-tag {
   font-size: 0.65rem;
   font-family: var(--mono);
-  background: rgba(255, 255, 255, 0.03);
+  background: rgba(255, 255, 255, 0.04);
   border: 1px solid var(--border);
-  color: var(--text);
+  color: var(--dim);
   border-radius: 5px;
   padding: 0.18rem 0.5rem;
 }
 .proj-link {
   font-size: 0.75rem;
   font-weight: 600;
-  color: var(--bright);
+  color: var(--accent);
   text-decoration: none;
   transition: color 0.15s;
   white-space: nowrap;
 }
 .proj-link:hover {
-  color: var(--accent);
+  color: var(--accent2);
 }
 
 /* ── CONTACT ── */
@@ -719,10 +722,10 @@ h1.hero-title .grad {
   align-items: center;
   gap: 0.8rem;
   font-size: 0.88rem;
-  color: var(--text);
+  color: var(--dim);
   text-decoration: none;
   padding: 0.75rem 1rem;
-  background: rgba(255, 255, 255, 0.01);
+  background: rgba(255, 255, 255, 0.02);
   border: 1px solid var(--border);
   border-radius: 10px;
   transition:
@@ -737,7 +740,7 @@ h1.hero-title .grad {
 }
 .soc-link svg {
   flex-shrink: 0;
-  opacity: 0.5;
+  opacity: 0.6;
 }
 .contact-form-wrap {
   padding: 2.5rem;
@@ -766,7 +769,7 @@ h1.hero-title .grad {
 }
 .cf-group input,
 .cf-group textarea {
-  background: rgba(255, 255, 255, 0.01);
+  background: rgba(255, 255, 255, 0.02);
   border: 1px solid var(--border);
   border-radius: 10px;
   padding: 0.8rem 1rem;
@@ -782,7 +785,7 @@ h1.hero-title .grad {
 .cf-group input:focus,
 .cf-group textarea:focus {
   border-color: var(--accent);
-  background: rgba(249, 115, 22, 0.03);
+  background: rgba(16, 185, 129, 0.06);
 }
 .cf-group input::placeholder,
 .cf-group textarea::placeholder {
